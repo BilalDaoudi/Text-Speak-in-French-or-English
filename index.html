@@ -12,10 +12,17 @@
 <body>
     <center>
         <div>
-            <h1>Hello ☻</h1>
-            <textarea name="" id="text" cols="30" rows="10" placeholder="You text ..." onkeyup="Length_text()"></textarea><br>
+            <h1 class="fr">Écrivez & Écoutez : Votre Texte en Voix</h1>
+            <h1 class="en" hidden>Write & Listen: Turn Your Text into Voice</h1>
+            <br>
+            <select id="langue">
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+            </select>
+            <br>
+            <textarea name="" id="text" cols="30" rows="10" placeholder="" onkeyup="Length_text()"></textarea><br>
             <p id="length">0</p>
-            <button id="btn">Speak</button>
+            <button id="btn"><span class="fr">Parler</span><span class="en" hidden>Speak</span></button>
         </div>
     </center>
     <script src="./script.js"></script>
